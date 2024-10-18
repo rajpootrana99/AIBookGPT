@@ -1,7 +1,8 @@
-import { Button } from "../../components/Button"
-import { Input } from "../../components/Input"
+import { ROUTES } from "src/routes";
+import { Button } from "src/components/Button"
+import { Input } from "src/components/Input"
 
-export const  ForgotPassword = () => {
+const ForgotPassword = () => {
   return (
     <div className=" w-screen h-screen flex justify-center items-center">
       <div className="w-[28em]">
@@ -16,10 +17,11 @@ export const  ForgotPassword = () => {
 
           <Button type="submit" value="Get Password Reset Link" />
 
-          <p className="text-indigo-950 font-medium text-sm text-center">Already know credentials? <a href="" className="text-base font-semibold text-indigo-600">Login here</a></p>
+          <p className="text-indigo-950 font-medium text-sm text-center">Already know credentials? <a href={ROUTES.LOGIN} className="text-base font-semibold text-indigo-600">Login here</a></p>
         </form>
       </div>
     </div>
   )
 }
 
+export default ForgotPassword;

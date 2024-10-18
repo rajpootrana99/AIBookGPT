@@ -1,8 +1,10 @@
-import { Button } from "../../components/Button"
-import { Input } from "../../components/Input"
-import { SocialButton } from "../../components/SocialButton"
+import { ROUTES } from "src/routes"
+import { Button } from "src/components/Button"
+import { Input } from "src/components/Input"
+import { SocialButton } from "src/components/SocialButton"
 
-export const Login = () => {
+
+const Login = () => {
   return (
     <div className=" w-screen h-screen flex justify-center items-center">
       <div className="w-[28em]">
@@ -23,14 +25,17 @@ export const Login = () => {
           <p className="mb-[8px] font-medium text-indigo-950">Password<span className="text-indigo-600">*</span></p>
           <Input type="password" placeholder="Enter your password" name="password" />
 
-          <p className="text-end mb-[24px]"><a href="" className="text-base font-semibold text-indigo-600">Forgot password?</a></p>
+          <p className="text-end mb-[24px]"><a href={ROUTES.FORGOT} className="text-base font-semibold text-indigo-600">Forgot password?</a></p>
 
           <Button type="submit" value="Sign In" />
 
-          <p className="text-indigo-950 font-medium text-sm text-center">Not registered yet? <a href="" className="text-base font-semibold text-indigo-600">Create an Account</a></p>
+          <p className="text-indigo-950 font-medium text-sm text-center">Not registered yet? <a href={ROUTES.SIGNUP} className="text-base font-semibold text-indigo-600">Create an Account</a></p>
         </form>
       </div>
     </div>
   )
 }
 
+
+
+export default Login;

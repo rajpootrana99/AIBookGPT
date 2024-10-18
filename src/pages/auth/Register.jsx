@@ -1,8 +1,9 @@
-import { Button } from "../../components/Button"
-import { Input } from "../../components/Input"
-import { SocialButton } from "../../components/SocialButton"
+import { ROUTES } from "src/routes"
+import { Button } from "src/components/Button"
+import { Input } from "src/components/Input"
+import { SocialButton } from "src/components/SocialButton"
 
-export const Register = () => {
+const Register = () => {
   return (
     <div className=" w-screen h-screen flex justify-center items-center">
       <div className="w-[28em]">
@@ -31,10 +32,12 @@ export const Register = () => {
 
           <Button type="submit" value="Create your Account" />
 
-          <p className="text-indigo-950 font-medium text-sm text-center">Already have an account? <a href="" className="text-base font-semibold text-indigo-600">Login here</a></p>
+          <p className="text-indigo-950 font-medium text-sm text-center">Already have an account? <a href={ROUTES.LOGIN} className="text-base font-semibold text-indigo-600">Login here</a></p>
         </form>
       </div>
     </div>
   )
 }
 
+
+export default Register;

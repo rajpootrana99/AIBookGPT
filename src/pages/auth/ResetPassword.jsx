@@ -1,7 +1,7 @@
-import { Button } from "../../components/Button"
-import { Input } from "../../components/Input"
+import { Button } from "src/components/Button"
+import { Input } from "src/components/Input"
 
-export const ResetPassword = () => {
+const ResetPassword = () => {
   return (
     <div className=" w-screen h-screen flex justify-center items-center">
       <div className="w-[28em]">
@@ -23,4 +23,7 @@ export const ResetPassword = () => {
     </div>
   )
 }
+
+
+export default ResetPassword;
 
