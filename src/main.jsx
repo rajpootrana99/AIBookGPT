@@ -10,8 +10,9 @@ import { ResetPassword } from './pages/auth/ResetPassword.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <ForgotPassword /> */}
-    <ResetPassword />
+    {/* <ResetPassword /> */}
     {/* <Register /> */}
     {/* <Login /> */}
+    <App />
   </StrictMode>,
 )
