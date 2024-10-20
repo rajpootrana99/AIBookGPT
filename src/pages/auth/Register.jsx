@@ -5,7 +5,7 @@ import { SocialButton } from "src/components/SocialButton"
 
 const Register = () => {
   return (
-    <div className=" w-screen h-screen flex justify-center items-center">
+    <div className=" w-screen h-full py-8 flex justify-center items-center">
       <div className="w-[28em]">
         <div>
           <h2 className="text-[36px] font-bold mb-[10px] text-indigo-950">Create account</h2>

@@ -6,7 +6,7 @@ import { SocialButton } from "src/components/SocialButton"
 
 const Login = () => {
   return (
-    <div className=" w-screen h-screen flex justify-center items-center">
+    <div className=" w-screen h-full flex justify-center items-center py-8">
       <div className="w-[28em]">
         <div>
           <h2 className="text-[36px] font-bold mb-[10px] text-indigo-950">Sign In</h2>

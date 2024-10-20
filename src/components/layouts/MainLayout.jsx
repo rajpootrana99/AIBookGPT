@@ -3,7 +3,7 @@ import React from 'react';
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import { Suspense } from "react";
 
-import Sidebar from "src/components/layouts/Sidebar";
+// import Sidebar from "src/components/layouts/Sidebar";
 import Header from "src/components/layouts/Header";
 // import LongLoader from 'src/components/global/LongLoader';
 
@@ -30,12 +30,13 @@ const MainLayout = () => {
   return (
     <>
     <div className="app" style={{scrollBehavior:"smooth", overflow: "hidden"}}>
-      <div className="w-screen h-full bg-gray-300">        
+      <div className="w-screen h-full">        
         {/* shown for large data operation */}
         {/* {loading && <LongLoader />} */}
-        <Sidebar />
-        <div className="w-full relative h-full float-right">
+        {/* <Sidebar /> */}
+        <div className="w-full h-full">
           <Header />
+          <Outlet />
           {/* screen loader not configured currently */}
           {/* <Suspense  fallback={<ScreenLoader />}>
                     <Outlet context={{loader: [loading, setLoading], progress: [progress, setProgress]}}  />
