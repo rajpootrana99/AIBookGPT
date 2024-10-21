@@ -2,6 +2,7 @@
 
 export const ROUTES = {
     CHAT: "/chat",
+    BOOK: "/book",
     
     LOGIN: "/",
     SIGNUP: "/register",

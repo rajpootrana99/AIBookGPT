@@ -22,6 +22,7 @@ import { PrivateRoute, PublicRoute } from "src/helpers/protectors";
 
 // all pages components are declared here
 const CHAT_PAGE = React.lazy(() => import("src/pages/chat/index"));
+const BOOK_PAGE = React.lazy(() => import("src/pages/book/index"))
 
 export const App = () => {
   return (
@@ -34,6 +35,7 @@ export const App = () => {
           element={<MainLayout />}
         >
           <Route path={ROUTES.CHAT} element={<CHAT_PAGE />} />
+          <Route path={ROUTES.BOOK} element={<BOOK_PAGE />} />
         </Route>
         {/* Routes that do not include the sidebar and topbar */}
         <Route
