@@ -36,11 +36,11 @@ const MainLayout = () => {
         {/* <Sidebar /> */}
         <div className="w-full h-full">
           <Header />
-          <Outlet />
+          {/* <Outlet /> */}
           {/* screen loader not configured currently */}
-          {/* <Suspense  fallback={<ScreenLoader />}>
+          <Suspense>
                     <Outlet context={{loader: [loading, setLoading], progress: [progress, setProgress]}}  />
-          </Suspense> */}
+          </Suspense>
         </div>
       </div>
     </div>
